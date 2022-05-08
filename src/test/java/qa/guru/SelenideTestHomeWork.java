@@ -17,11 +17,11 @@ $("h1").$("div") - после того как будет найден h1-эле�
 
     //    Task2
     @Test
-    void SelenideSoftAssertions() {
+    void selenideSoftAssertions() {
 
         Selenide.open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
-        $(withTagAndText("a", "Soft assertions")).shouldBe(Condition.visible).click();
+        $(withTagAndText("a", "Soft assertions")).click();
         $("#user-content-3-using-junit5-extend-test-class").shouldBe(Condition.visible);
 
     }
